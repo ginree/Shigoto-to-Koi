@@ -1,29 +1,39 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/gui.rpy", line 99, in script
-    define gui.default.ruby_style = style.ruby_style
-  File "game/gui.rpy", line 99, in <module>
-    define gui.default.ruby_style = style.ruby_style
-Exception: Style 'ruby_style' does not exist.
+After initialization, but before game start.
+  File "renpy/common/00start.rpy", line 76, in _init_language
+    renpy.change_language(language)
+  File "game/screens.rpy", line 160, in <module>
+    xanchor gui.text_xalign
+AttributeError: 'StoreModule' object has no attribute 'text_xalign'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/gui.rpy", line 99, in script
-    define gui.default.ruby_style = style.ruby_style
-  File "C:\renpy-6.99.11-sdk\renpy\ast.py", line 1801, in execute
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "C:\renpy-6.99.11-sdk\renpy\bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "C:\renpy-6.99.11-sdk\renpy\main.py", line 478, in main
+    run(restart)
+  File "C:\renpy-6.99.11-sdk\renpy\main.py", line 66, in run
+    renpy.translation.init_translation()
+  File "C:\renpy-6.99.11-sdk\renpy\translation\__init__.py", line 486, in init_translation
+    renpy.store._init_language() # @UndefinedVariable
+  File "renpy/common/00start.rpy", line 76, in _init_language
+    renpy.change_language(language)
+  File "C:\renpy-6.99.11-sdk\renpy\translation\__init__.py", line 544, in change_language
+    new_change_language(tl, language)
+  File "C:\renpy-6.99.11-sdk\renpy\translation\__init__.py", line 515, in new_change_language
+    i.apply()
+  File "C:\renpy-6.99.11-sdk\renpy\ast.py", line 2199, in apply
+    value = renpy.python.py_eval(expr)
+  File "C:\renpy-6.99.11-sdk\renpy\python.py", line 1670, in py_eval
+    return py_eval_bytecode(code, globals, locals)
   File "C:\renpy-6.99.11-sdk\renpy\python.py", line 1665, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/gui.rpy", line 99, in <module>
-    define gui.default.ruby_style = style.ruby_style
-  File "renpy/style.pyx", line 201, in renpy.style.StyleManager.__getattr__ (gen\renpy.style.c:3352)
-    return get_style(name)
-  File "renpy/style.pyx", line 88, in renpy.style.get_style (gen\renpy.style.c:1761)
-    raise Exception("Style %r does not exist." % name)
-Exception: Style 'ruby_style' does not exist.
+  File "game/screens.rpy", line 160, in <module>
+    xanchor gui.text_xalign
+AttributeError: 'StoreModule' object has no attribute 'text_xalign'
 
 Windows-8-6.2.9200
 Ren'Py 6.99.11.1749
- 
+Shigoto to Koi 0.0.0
