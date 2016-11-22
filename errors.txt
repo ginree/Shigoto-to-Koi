@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script_jp.rpy", line 344: expected statement.
-    Selection 4.1
-               ^
+File "game/script_jp.rpy", line 794: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        "{rb}人生{/rb}{rt}じんせい{/rt}の{rb}選択{/rb}{rt}せんたく{/rt}なら、{rb}時間{/rb}{rt}じかん{/rt}がかかなくて、{rb}状態{/rb}{rt}しょうたい{/rt}に考えなきゃいけないと
 
 Ren'Py Version: Ren'Py 6.99.11.1749

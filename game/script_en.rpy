@@ -117,6 +117,10 @@ label scene2_1_en:
 label scene2_2_en:
 
     scene bg frontdoor_night with fade
+
+    stop music fadeout 1.0
+    play music "music/tora.mp3" loop
+
     show tora openmouth at mid_left
     show ryuu casual happy at mid_right
 
@@ -181,6 +185,9 @@ label scene2_2_en:
 label scene3_0_en:
 
     scene bg cubicle_day with fade
+
+    stop music fadeout 1.0
+    play music "music/intro.mp3" loop
 
     "That Saturday, it was easy to focus on work since I had so much fun last night."
     "I think Mr. Shigeo was working hard as usual, too."
@@ -278,6 +285,10 @@ label scene3_1_en:
     "I finished work as quickly as possible, so we left early."
 
     scene bg restaurant_night with dissolve
+
+    stop music fadeout 1.0
+    play music "music/restaurant.mp3" loop
+
     "He took us to a famous restaurant."
     "I've gone here once."
     "I see it everyday from the train, but I still couldn't imagine myself going here."
@@ -298,6 +309,10 @@ label scene3_1_en:
     "Mr. Shigeo... No, Ryuu... Does he like me?"
 
     scene sky_night with fade
+
+    stop music fadeout 1.0
+    play music "music/sad.mp3" loop
+
     "I remembered when we were eating at the restaurant, I saw Ryuu sometimes looking at me."
     "When our eyes met, a smile appeared on his face."
     "Even in the office, when we would go to the cafeteria together, I wanted to touch his hand."
@@ -326,12 +341,17 @@ label scene3_1_en:
 
 label scene3_2_en:
     scene sky_day with dissolve
+
+
     "This past week, I have thought about what his real thoughts were."
     "I thought that it's not too bad when I speculate about Ryuu for being not so honest with me."
     "But these are just inside my head. I wanted to resolve this as soon as possible."
     "...And that's what I did."
 
     scene cubicle_noon with fade
+
+    stop music fadeout 1.0
+    play music "music/intro.mp3" loop
 
     show ryuu suit sad
     mc "Ryuu, can I ask you something?"
@@ -438,12 +458,19 @@ label scene3_2_en:
 
 label scene4_0_en:
     scene sky_day with dissolve
+
+    stop music fadeout 1.0
+    play music "music/sad.mp3" loop
+
     "It has been almost a year since I first met him."
     "I have gone to countless parties and hangouts. But we're still just friends."
     "But every time, it seemed that he couldn't express his true feelings."
     "I couldn't, either."
 
     scene bg cubicle_day with fade
+
+    stop music fadeout 1.0
+    play music "music/intro.mp3" loop
 
     "Today, for some reason, he looked kind of sad, which was unusual."
     "He didn't approach me at the usual time."
@@ -542,6 +569,9 @@ label scene4_0_2_en:
     ryuu "I need to tell you this, but let's go somewhere private."
 
     scene bg roadside_noon with dissolve
+
+    stop music fadeout 1.0
+    play music "music/sad.mp3" loop
 
     "We went for a walk. There weren't many people around."
     "Ryuu suddenly spoke."
@@ -683,18 +713,24 @@ label scene4_1_1_en:
             show ryuu suit grin
             ryuu "Sure thing."
 
+            jump scene4_2_en
+
         "Maybe it's better if we went home early.":
             mc "Okay, if you're sure."
             mc "Then, I'll go home early. Good luck!"
             show ryuu suit grin
             ryuu "Thank you."
 
-    jump scene4_2_en
+            jump neutral_bridge_en
+
     return
 
 label scene4_2_en:
 
     scene bg toy_shop with dissolve
+
+    stop music fadeout 1.0
+    play music "music/tora.mp3" loop
 
     "We went to a toy shop, since I won a discount coupon from a raffle the other day."
     "Ryuu bought me a blue doll."
@@ -742,6 +778,9 @@ label good_en:
 
     scene bg park_dusk with fade
 
+    stop music fadeout 1.0
+    play music "music/good.mp3" loop
+
     "Huh... Did I fall asleep? What time is it?"
     "Oh, it's 11:45pm. I felt so warm, I didn't even notice the time."
 
@@ -787,6 +826,9 @@ label neutral_bridge_en:
 label neutral_en:
     scene bg bar_night with fade
 
+    stop music fadeout 1.0
+    play music "music/neutral.mp3" loop
+
     "I think when it comes to life's decisions, I should take my time and look deeper into the situation."
     "Here in the company, I have friends whom I enjoy being with. Friends, especially Ryuu, trust me for who I am."
     "I have been promoted as executive secretary, that's why we celebrate tonight."
@@ -811,6 +853,9 @@ label neutral_en:
 label bad_en:
     scene bg cubicle_night with fade
 
+    stop music fadeout 1.0
+    play music "music/sad.mp3" loop
+
     "As I left the president's office, I read the resignation form that Mr. Shigeo gave me."
     "Attached was a small list containing the company terms and conditions."
     "What is this? '...that you should be with a certain person...'"
@@ -818,6 +863,9 @@ label bad_en:
     "I tried to open the door for the president's office, but it's locked."
 
     scene bg cubicle_off with dissolve
+
+    stop music fadeout 1.0
+    play music "music/bad.mp3" loop
 
     "Suddenly the lights went off... I couldn't see anything."
     "Everything was pitch black."

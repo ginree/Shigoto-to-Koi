@@ -129,7 +129,6 @@ label settings_chooser:
             $ persistent.lang = "english"
 
             $ ryuu_name = "Interviewer"
-            $ felicia_name = "Felicia"
             $ staff_name = "Staff"
             $ tora_name = "Tora"
             $ coworker_name = "Co-workers"
@@ -141,12 +140,11 @@ label settings_chooser:
 
             $ persistent.lang = "japanese"
 
-            $ ryuu_name = "面接官"
-            $ felicia_name = "Felicia"
-            $ staff_name = "職員"
-            $ tora_name = "虎"
-            $ coworker_name = "同僚"
-            $ hanako_name = "知らない人"
+            $ ryuu_name = "{rb}面接官{/rb}{rt}めんせつかん{/rt}"
+            $ staff_name = "{rb}職員{/rb}{rt}しょくいん{/rt}"
+            $ tora_name = "虎{rt}とら{/rt}"
+            $ coworker_name = "{rb}同僚{/rb}{rt}どうりょう{/rt}"
+            $ hanako_name = "知{rt}し{/rt}らない人{rt}ひと{/rt}"
 
             if mc_gender == "male":
                 $ mc_sib = "おにいちゃん"
@@ -157,6 +155,8 @@ label settings_chooser:
 
 label scene1_en:
     scene bg room_day with dissolve
+
+    play music "music/intro.mp3" loop
 
     "Good morning! It’s 7AM, Monday. I feel good today!"
 
@@ -177,6 +177,8 @@ label scene1_en:
 
 label scene1_jp:
     scene bg room_day with dissolve
+
+    play music "music/intro.mp3" loop
 
     "おはよう！{rb}午前{/rb}{rt}ごぜん{/rt}７時{rt}じ{/rt}、{rb}月曜日{/rb}{rt}げつようび{/rt}。"
 
