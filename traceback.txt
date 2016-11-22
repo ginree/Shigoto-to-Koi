@@ -1,25 +1,35 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script_business.rpy", line 267, in <module>
-    scene black with fade
-NameError: name 'mid_sleft' is not defined
+  File "game/script_en.rpy", line 849, in <module>
+    mc "NOOOOOOOOOOOOOOOOOOOOOO!!!!" with hpunch(1.5)
+Exception: Not a displayable: 1.5
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "lib/windows-i686/script_business.rpyc", line 267, in script
-  File "C:\renpy-6.99.11-sdk\renpy\ast.py", line 1064, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\renpy-6.99.11-sdk\renpy\ast.py", line 1025, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "lib/windows-i686/script_en.rpyc", line 849, in script
+  File "C:\renpy-6.99.11-sdk\renpy\ast.py", line 602, in execute
+    say_menu_with(self.with_, renpy.game.interface.set_transition)
+  File "C:\renpy-6.99.11-sdk\renpy\ast.py", line 465, in say_menu_with
+    what = renpy.python.py_eval(expression)
   File "C:\renpy-6.99.11-sdk\renpy\python.py", line 1670, in py_eval
     return py_eval_bytecode(code, globals, locals)
   File "C:\renpy-6.99.11-sdk\renpy\python.py", line 1665, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script_business.rpy", line 267, in <module>
-    scene black with fade
-NameError: name 'mid_sleft' is not defined
+  File "game/script_en.rpy", line 849, in <module>
+    mc "NOOOOOOOOOOOOOOOOOOOOOO!!!!" with hpunch(1.5)
+  File "C:\renpy-6.99.11-sdk\renpy\curry.py", line 38, in __call__
+    **dict(self.kwargs.items() + kwargs.items()))
+  File "C:\renpy-6.99.11-sdk\renpy\display\motion.py", line 304, in Move
+    **properties)
+  File "C:\renpy-6.99.11-sdk\renpy\display\motion.py", line 98, in __init__
+    self.add(child)
+  File "C:\renpy-6.99.11-sdk\renpy\display\layout.py", line 129, in add
+    child = renpy.easy.displayable(d)
+  File "C:\renpy-6.99.11-sdk\renpy\easy.py", line 105, in displayable
+    raise Exception("Not a displayable: %r" % (d,))
+Exception: Not a displayable: 1.5
 
 Windows-8-6.2.9200
 Ren'Py 6.99.11.1749

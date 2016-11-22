@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 60: invalid syntax
-    transform mid_right:
-                       ^
-    
+File "game/script_jp.rpy", line 344: expected statement.
+    Selection 4.1
+               ^
 
 Ren'Py Version: Ren'Py 6.99.11.1749
