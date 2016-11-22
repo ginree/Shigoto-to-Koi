@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script_business.rpy", line 61: Menu does not contain any choices.
-    menu:
-         ^
+File "game/script.rpy", line 60: invalid syntax
+    transform mid_right:
+                       ^
+    
 
 Ren'Py Version: Ren'Py 6.99.11.1749
